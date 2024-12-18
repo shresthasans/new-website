@@ -40,6 +40,7 @@
     &-8{
         padding:2rem
     }
+   
     &y{
         &-16 {
             padding-block: 4rem;
@@ -50,6 +51,7 @@
             padding-inline: 2rem;
         }
     }
+    
 }
 
 .m{
@@ -63,21 +65,26 @@
 @media screen and (min-width: 640px) {
 
     .sm\: {
-        &p- {
-            &1 {
+        &p{
+            &-1 {
                 padding: var(--1);
             }
 
-            &2 {
+            &-2 {
                 padding: var(--2);
             }
 
-            &3 {
+            &-3 {
                 padding: var(--3);
             }
 
-            &4 {
+            &-4 {
                 padding: var(--4);
+            }
+            &t {
+                &-40 {
+                    padding-top: 10rem;
+                }
             }
             
         }
@@ -87,17 +94,31 @@
 
 @media screen and (min-width: 768px) {
 
-    .md\:intro {
-        font-size: 14rem;
+    .md\:{
+        &p{
+            &t {
+                &-80 {
+                    padding-top: 20rem;
+                }
+            }
+        }
+        
     }
 }
 
 
 @media screen and (min-width: 1024px) {
 
-    .lg\:intro {
-        font-size: 14rem;
-    }
+    .lg\: {
+            &p {
+                &t {
+                    &-120 {
+                        padding-top: 30rem;
+                    }
+                }
+            }
+    
+        }
 }
 
 @media screen and (min-width: 1280px) {
