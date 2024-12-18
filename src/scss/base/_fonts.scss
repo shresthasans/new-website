@@ -18,8 +18,24 @@
   font-style: normal;
 }
 
-.font-semibold {
-  font-weight: 600;
+.font{
+  &-extralight{
+    font-weight: 200;
+  }
+  &-semibold {
+    font-weight: 600;
+  }
 }
 
+// .text{
+//   &-uppercase{
+//     text-transform: uppercase;
+//   }
+// }
 
+.sub__heading{
+  font-size: clamp(1rem, 5vw, 1.875rem);
+}
+.heading {
+  font-size: clamp(2.4rem, 10vw, 8rem);
+}
