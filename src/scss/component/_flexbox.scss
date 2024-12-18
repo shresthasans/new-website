@@ -11,10 +11,18 @@
     &-auto{
         flex: 1 1 auto;
     }
+    &-wrap{
+        flex-wrap: wrap;
+    }
 }
 
-.justify-between {
-    justify-content: space-between;
+.justify{
+    &-between {
+        justify-content: space-between;
+    }
+    &-center{
+        justify-content: center;
+    }
 }
 
 .items-center{

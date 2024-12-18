@@ -15,9 +15,22 @@
     &-4 {
         gap: var(--4)
     }
-        &-12 {
-            gap: 3rem
+    &-8 {
+        gap: var(--8)
+    }
+    &-12 {
+        gap: var(--12)
+    }
+    &-x{
+        &-8{
+            column-gap: var(--8);
         }
+    }
+    &-y {
+        &-4 {
+                row-gap: var(--4);
+            }
+    }
 
 }
 
@@ -38,17 +51,23 @@
         padding: var(--4);
     }
     &-8{
-        padding:2rem
+        padding: var(--8)
     }
    
     &y{
+        &-2{
+            padding-block: var(--2);
+        }
         &-16 {
-            padding-block: 4rem;
+            padding-block: var(--16);
         }
     }
     &x {
         &-8 {
-            padding-inline: 2rem;
+            padding-inline: var(--8)
+        }
+        &-4{
+            padding-inline: var(--4);
         }
     }
     
