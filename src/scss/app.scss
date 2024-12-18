@@ -10,7 +10,7 @@
 @import 'base/print';
 
 /* Fonts */
-@import 'base/fonts';
+@import 'component/fonts';
 
 /* Mixins, helpers and functions */
 @import 'base/mixins';
@@ -18,10 +18,10 @@
 /* Vendor */
 
 /* Components */
-@import 'base/flexbox';
-@import 'base/grid';
-@import 'base/spacings';
-@import 'base/container';
+@import 'component/flexbox';
+@import 'component/grid';
+@import 'component/spacings';
+@import 'component/container';
 
 /* Browser specific styles */
 @import 'dirty/hacks';
