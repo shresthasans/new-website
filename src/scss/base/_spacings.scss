@@ -1,0 +1,120 @@
+
+.gap {
+    &-1 {
+        gap: var(--1)
+    }
+
+    &-2 {
+        gap: var(--2)
+    }
+
+    &-3 {
+        gap: var(--3)
+    }
+
+    &-4 {
+        gap: var(--4)
+    }
+        &-12 {
+            gap: 3rem
+        }
+
+}
+
+.p{
+    &-1 {
+        padding: var(--1);
+    }
+
+    &-2 {
+        padding: var(--2);
+    }
+
+    &-3 {
+        padding: var(--3);
+    }
+
+    &-4 {
+        padding: var(--4);
+    }
+    &-8{
+        padding:2rem
+    }
+    &y{
+        &-16 {
+            padding-block: 4rem;
+        }
+    }
+    &x {
+        &-8 {
+            padding-inline: 2rem;
+        }
+    }
+}
+
+.m{
+    &-auto{
+        margin: auto;
+    }
+
+}
+
+
+@media screen and (min-width: 640px) {
+
+    .sm\: {
+        &p- {
+            &1 {
+                padding: var(--1);
+            }
+
+            &2 {
+                padding: var(--2);
+            }
+
+            &3 {
+                padding: var(--3);
+            }
+
+            &4 {
+                padding: var(--4);
+            }
+            
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .md\:intro {
+        font-size: 14rem;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .lg\:intro {
+        font-size: 14rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .xl\:intro {
+        font-size: 13rem;
+    }
+
+    .intro {
+        font-size: 12rem;
+    }
+
+}
+
+@media screen and (min-width: 1536px) {
+
+    .intro {
+        font-size: 14rem;
+    }
+}
