@@ -154,13 +154,13 @@ You can additionally configure `webpack` for specific environment:
 ### One time build assets for development
 
 ```sh
-$ npm run build
+$ pnpm run build
 ```
 
 ### Build assets and enable source files watcher
 
 ```sh
-$ npm run watch
+$ pnpm run watch
 ```
 
 This command is suitable if you develop with external web server.
@@ -179,7 +179,7 @@ module.exports = {
 ### Start a development server - reloading automatically after each file change.
 
 ```sh
-$ npm run dev
+$ pnpm run dev
 ```
 
 # Production

@@ -23,6 +23,7 @@ module.exports = merge(webpackConfiguration, {
     open: true,
     compress: true,
     hot: false,
+    // watchFiles: ['src/**/*'], // Watch for changes in nested files
     ...environment.server,
   },
 
