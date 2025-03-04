@@ -1,54 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home: Sanjay Shrestha</title>
+    <meta
+      name="description"
+      content="Simple starter webpack 5 project template boilerplate supporting SASS/PostCSS, Babel ES7, browser syncing, code linting. Easy project setup having multiple features and developer friendly tools."
+    />
+    <meta
+      name="keywords"
+      content="webpack, webpack-configuration, template, boilerplate, setup, html, css, sass, javascript"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Plamen Nikolov, WeAreAthlon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Home: Sanjay Shrestha</title>
-  <meta name="description"
-    content="Simple starter webpack 5 project template boilerplate supporting SASS/PostCSS, Babel ES7, browser syncing, code linting. Easy project setup having multiple features and developer friendly tools.">
-  <meta name="keywords"
-    content="webpack, webpack-configuration, template, boilerplate, setup, html, css, sass, javascript">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="Plamen Nikolov, WeAreAthlon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  <nav class="flex justify-between bg-black text-white p-4 border-b">
-    <a href="index.html">Sanjay S.</a>
-    <ul class="flex gap-4">
-      <li><a href="#">About Me</a></li>
-      <li><a href="#">Works</a></li>
-      <li><a href="#">Contacts</a></li>
-    </ul>
-  </nav>
-  <div class="bg-black">
-  <article class=" text-white p-4 border-b">
-    <h1 class="md:text-[10rem] lg:text-[15rem]">
-      Designing digital experiences
-    </h1>
-  </article>
-  <div class="border-b">
-    <div class="flex gap-2 items-center p-4">
-      <span class="w-8 h-[2px] bg-white"></span>
-      <span class="text-white text-4xl">that make users think</span>
-    </div>
-  </div>
-  <div class="flex justify-end ">
-    <div class="w-6/12 text-white py-28 text-4xl flex flex-col gap-8">
-      <p>Leveraging insights in user psychology and aesthetics, my approach enhances functionality with visual elegance, further
-      enriching the sleek, user-friendly mobile apps I specialize in.
-      </p>
-      <div class="flex items-center gap-8">
-        <a href="mailto:inquiry@sanjayshrestha.com" class="bg-white text-black p-6 rounded-full">Get in touch</a>
-        <a href="#" class="bg-black text-white p-6 rounded-full font-light">Works</a>
-        
+  <body>
+    <nav class="flex justify-between bg-black text-white p-8 border-b border-gray-500">
+      <a href="index.html">Sanjay S.</a>
+      <ul class="flex gap-4">
+        <li><a href="./about-me.html">About Me</a></li>
+        <li><a href="./works.html">Works</a></li>
+        <li><a href="./contact.html">Contacts</a></li>
+      </ul>
+    </nav>
+    <div class="bg-black">
+      <article class="text-white p-8 border-b border-gray-500">
+        <h1 class="sm:intro__title text-7xl font-semibold leading-tight">Designing digital experiences</h1>
+      </article>
+      <!-- <div class="border-b">
+        <div class="flex gap-2 items-center p-4">
+          <span class="w-8 h-[2px] bg-white"></span>
+          <span class="text-white text-4xl">that make users think</span>
+        </div>
+      </div> -->
+      <div class="flex justify-end">
+        <div class="md:w-6/12 text-white md:py-28 flex flex-col gap-8 p-8">
+          <p class="text-4xl">
+            Certified UX Designer (CUA™), based in Kathmandu, Nepal, focusing on end-to-end product design, including
+            product strategy, visual design, interaction design and prototyping.
+          </p>
+          <div class="flex items-center gap-8">
+            <a href="mailto:inquiry@sanjayshrestha.com" class="bg-white text-black p-6 rounded-full text-2xl"
+              >Get in touch</a
+            >
+            <a href="#" class="bg-black text-white p-6 rounded-full font-light text-2xl">Works</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  </div>
-</body>
-
+    <main>
+      <div class="flex flex-col sm:py-24 py-8 px-8">
+        <div>
+          <h2 class="uppercase text-3xl">Passionately crafted experiences</h2>
+          <h1 class="text-8xl font-semibold">Featured work</h1>
+        </div>
+        <div class="wrapper m-auto">
+          <article class="sm:py-24 py-8">
+            <div class="flex flex-col gap-8">
+              <div class="flex">
+                <div class="sm:w-6/12">
+                  <a href="./pagevamp.html">
+                    <figure class="flex flex-col gap-4">
+                      <img src="https://placehold.co/600x400" alt="placeholder" />
+                      <figcaption>
+                        <h1 class="text-3xl font-semibold">Decisions AI</h1>
+                        <h2 class="text-xl">Mobile app</h2>
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div class="flex justify-end">
+                <div class="sm:w-6/12">
+                  <figure class="flex flex-col gap-4">
+                    <img src="https://placehold.co/600x400" alt="placeholder" />
+                    <figcaption>
+                      <h1 class="text-3xl font-semibold">Decisions AI</h1>
+                      <h2 class="text-xl">Mobile app</h2>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="flex">
+                <div class="sm:w-6/12">
+                  <figure class="flex flex-col gap-4">
+                    <img src="https://placehold.co/600x400" alt="placeholder" />
+                    <figcaption>
+                      <h1 class="text-3xl font-semibold">Decisions AI</h1>
+                      <h2 class="text-xl">Mobile app</h2>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="flex justify-end">
+                <div class="sm:w-6/12">
+                  <figure class="flex flex-col gap-4">
+                    <img src="https://placehold.co/600x400" alt="placeholder" />
+                    <figcaption>
+                      <h1 class="text-3xl font-semibold">Decisions AI</h1>
+                      <h2 class="text-xl">Mobile app</h2>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+              <div class="flex flex-col items-center justify-center gap-4 mt-10">
+                <h2 class="text-2xl">more works...</h2>
+                <div class="flex items-center gap-8">
+                  <a href="#" class="border p-6 rounded-md text-2xl min-w-36">Behance</a>
+                  <a href="#" class="border p-6 rounded-md text-2xl min-w-36">Dribbble</a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-black">
+      <h2 class="text-white p-8 border-b border-gray-500 font-semibold sm:intro__title">Let's connect</h2>
+      <div class="flex flex-col text-white p-8 gap-4">
+        <h2 class="text-6xl">Have questions about a project?</h2>
+        <h3 class="text-6xl">Shoot me an <a href="mailto:inquiry@sanjayshrestha.com">email</a> - Available now.</h3>
+      </div>
+      <ul class="flex gap-4 p-8">
+        <a href="mailto:dziner.sanjay@gmail.com" class="text-3xl text-white">Email</a>
+        <a href="https://www.dribbble.com/shresthasans" target="_blank" class="text-3xl text-white">Dribbble</a>
+        <a href="https://www.behance.net/shresthasans" target="_blank" class="text-3xl text-white">Behance</a>
+        <a href="https://linkedin.com/in/shresthasans" target="_blank" class="text-3xl text-white">LinkedIn</a>
+        <a href="https://github.com/shresthasans" target="_blank" class="text-3xl text-white">Github</a>
+      </ul>
+      <div class="flex gap-8 p-8 text-white text-3xl">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </div>
+    </footer>
+  </body>
 </html>

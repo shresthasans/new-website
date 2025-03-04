@@ -1,0 +1,14 @@
+
+
+@font-face {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.intro {
+    &__title {
+        font-size: clamp(2rem, 12vw, 15rem);
+    }
+}
