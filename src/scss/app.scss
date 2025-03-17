@@ -1,33 +1,72 @@
 /* By Athlon Front-End Team */
 
 /* Core variables */
-@import 'base/vars';
+// @use 'base/vars';
 
-/* CSS Reset */
-@import 'base/reset';
+// /* CSS Reset */
+// @use 'base/reset';
 
-/* CSS print */
-@import 'base/print';
+// /* CSS print */
+// // @use 'base/print';
 
-/* Fonts */
-@import 'component/fonts';
+// /* Fonts */
+// @use 'component/fonts';
 
-/* Mixins, helpers and functions */
-@import 'base/mixins';
+// /* Mixins, helpers and functions */
+// @use 'base/mixins';
 
-/* Vendor */
+// /* Vendor */
 
-/* Layout */
-@import 'layout/layout';
+// /* Layout */
+// @use 'layout/layout';
 
-/* Components */
-@import 'component/flexbox';
-@import 'component/grid';
-@import 'component/spacings';
-@import 'component/container';
+// /* Components */
+// @use 'component/flexbox';
+// @use 'component/grid';
+// @use 'component/spacings';
+// @use 'component/container';
+// @use 'component/parallax';
 
-/* Browser specific styles */
-@import 'dirty/hacks';
+// /* Browser specific styles */
+// @use 'dirty/hacks';
 
-/* Demo Page styles */
-@import 'demo';
+// /* Demo Page styles */
+// @use 'demo';
+
+// @use 'components/fonts' as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+
+@layer utilities{
+    
+    
+        .intro {
+            &__title {
+                font-size: clamp(2rem, 12vw, 15rem);
+            }
+        }
+}
+
+@layer components{
+
+    .wrapper{
+        @apply w-full sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl;
+    }
+}
+
+
