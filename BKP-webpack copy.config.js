@@ -1,3 +1,6 @@
+/**
+ * Webpack main configuration file
+ */
 const path = require('path');
 const fs = require('fs');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -5,6 +8,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 const environment = require('./configuration/environment');
 
 const templateFiles = fs
@@ -46,36 +50,25 @@ module.exports = {
         use: ['babel-loader'],
       },
       {
-        test: /\.(png|jpe?g|webp)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: 'images/resized/[name].[hash:6][ext]',
-        },
-      },
-      {
-        test: /\.(png|jpe?g|webp)$/i,
-        use: [
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              mozjpeg: { progressive: true, quality: 80 },
-              optipng: { optimizationLevel: 5 },
-              pngquant: { quality: [0.6, 0.8], speed: 4 },
-              webp: { quality: 80 },
-            },
+        test: /\.(png|gif|jpe?g|svg)$/i,
+        type: 'asset',
+        parser: {
+          dataUrlCondition: {
+            maxSize: environment.limits.images,
           },
-        ],
-      },
-      {
-        test: /\.svg$/i,
-        type: 'asset/resource',
+        },
         generator: {
           filename: 'images/design/[name].[hash:6][ext]',
         },
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,
-        type: 'asset/resource',
+        type: 'asset',
+        parser: {
+          dataUrlCondition: {
+            maxSize: environment.limits.images,
+          },
+        },
         generator: {
           filename: 'fonts/[name].[hash:6][ext]',
         },
@@ -87,13 +80,27 @@ module.exports = {
       '...',
       new ImageMinimizerPlugin({
         minimizer: {
-          implementation: ImageMinimizerPlugin.sharpMinify,
+          implementation: ImageMinimizerPlugin.imageminMinify,
           options: {
-            encodeOptions: {
-              webp: { quality: 80 },
-              jpeg: { quality: 80 },
-              png: { quality: 80 },
-            },
+            // Lossless optimization with custom option
+            // Feel free to experiment with options for better result for you
+            plugins: [
+              ['gifsicle', { interlaced: true }],
+              ['jpegtran', { progressive: true }],
+              ['optipng', { optimizationLevel: 5 }],
+              // Svgo configuration here https://github.com/svg/svgo#configuration
+              [
+                'svgo',
+                {
+                  plugins: [
+                    {
+                      name: 'removeViewBox',
+                      active: false,
+                    },
+                  ],
+                },
+              ],
+            ],
           },
         },
       }),
