@@ -85,13 +85,13 @@ importers:
         version: 8.1.1(postcss@8.5.3)(webpack@5.98.0)
       sass:
         specifier: ^1.50.1
-        version: 1.86.0
+        version: 1.86.3
       sass-lint:
         specifier: ^1.13.1
         version: 1.13.1
       sass-loader:
         specifier: ^16.0.5
-        version: 16.0.5(sass@1.86.0)(webpack@5.98.0)
+        version: 16.0.5(sass@1.86.3)(webpack@5.98.0)
       sharp:
         specifier: ^0.34.0
         version: 0.34.0
@@ -4269,8 +4269,8 @@ packages:
       webpack:
         optional: true
 
-  sass@1.86.0:
-    resolution: {integrity: sha512-zV8vGUld/+mP4KbMLJMX7TyGCuUp7hnkOScgCMsWuHtns8CWBoz+vmEhoGMXsaJrbUP8gj+F1dLvVe79sK8UdA==}
+  sass@1.86.3:
+    resolution: {integrity: sha512-iGtg8kus4GrsGLRDLRBRHY9dNVA78ZaS7xr01cWnS7PEMQyFtTqBiyCrfpTYTZXRWM94akzckYjh8oADfFNTzw==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -9645,14 +9645,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  sass-loader@16.0.5(sass@1.86.0)(webpack@5.98.0):
+  sass-loader@16.0.5(sass@1.86.3)(webpack@5.98.0):
     dependencies:
       neo-async: 2.6.2
     optionalDependencies:
-      sass: 1.86.0
+      sass: 1.86.3
       webpack: 5.98.0(webpack-cli@6.0.1)
 
-  sass@1.86.0:
+  sass@1.86.3:
     dependencies:
       chokidar: 4.0.3
       immutable: 5.1.1
