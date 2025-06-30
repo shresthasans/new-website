@@ -97,7 +97,7 @@ importers:
         version: 0.34.1
       tailwindcss:
         specifier: ^4.0.15
-        version: 4.1.5
+        version: 4.1.11
       terser-webpack-plugin:
         specifier: ^5.2.5
         version: 5.3.14(webpack@5.99.7)
@@ -4606,8 +4606,8 @@ packages:
   table@3.8.3:
     resolution: {integrity: sha512-RZuzIOtzFbprLCE0AXhkI0Xi42ZJLZhCC+qkwuMLf/Vjz3maWpA8gz1qMdbmNoI9cOROT2Am/DxeRyXenrL11g==}
 
-  tailwindcss@4.1.5:
-    resolution: {integrity: sha512-nYtSPfWGDiWgCkwQG/m+aX83XCwf62sBgg3bIlNiiOcggnS1x3uVRDAuyelBFL+vJdOPPCGElxv9DjHJjRHiVA==}
+  tailwindcss@4.1.11:
+    resolution: {integrity: sha512-2E9TBm6MDD/xKYe+dvJZAmg3yxIEDNRc0jwlNyDg/4Fil2QcSLjFKGVff0lAf1jjeaArlG/M75Ey/EYr/OJtBA==}
 
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
@@ -10090,7 +10090,7 @@ snapshots:
       slice-ansi: 0.0.4
       string-width: 2.1.1
 
-  tailwindcss@4.1.5: {}
+  tailwindcss@4.1.11: {}
 
   tapable@2.2.1: {}
 
